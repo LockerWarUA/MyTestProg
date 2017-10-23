@@ -11,14 +11,14 @@ public class CW_5 {
         int miesiancu = sc.nextInt();
         //ille dni
         int[] miesianc = {0, 31, 28, 30, 31, 30, 31, 30, 31, 30, 31, 30, 31};
-        System.out.println(miesiancu);
-    for (i = 1; i > miesiancu; ++i) mie = mie + miesianc[i];
-    System.out.println(i);
-        System.out.println(mie);
-        System.out.println(miesiancu);
-        System.out.println(miesianc[miesiancu]);
+    for (i = 1; i <= (12 - miesiancu); ++i) mie = mie + miesianc[i];
+        System.out.println("i" + i);
+        System.out.println("mie" + mie);
+        //System.out.println(miesiancu);
+        //System.out.println(miesianc[miesiancu]);
+        dzienu = miesianc[miesiancu] - dzienu;
         int ille = mie+dzienu;
-        System.out.println(ille);
+        System.out.println("ille" + ille);
 
     }
 }
